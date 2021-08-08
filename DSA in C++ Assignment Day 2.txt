@@ -1,0 +1,15 @@
+Question 1
+Find the output of the following code snippet: 
+	int i =0, j = 0;
+	int *p = &i, *q = &j;
+	q = p;
+	*q = 2
+	cout<<i<<" "<<j;
+
+**Answer:
+	The Output will be --- 2 0
+
+Explanation:  In the above code P and Q is storing the address of I and J.
+By Q =P, Q stores the  value of P which is the address of I.
+In next we assigning 2 to Q which is the address of I, now I value is changed to 2.
+So the output will be --- 2 0.
